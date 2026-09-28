@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact Us | DriveSmart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <span>DS</span>
+
+                DriveSmart
+
+            </div>
+
+
+            <button
+                class="menu-btn"
+                onclick="toggleMenu()"
+            >
+                ☰
+            </button>
+
+
+            <ul id="navLinks">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cars.html">
+                        Cars
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="contact.html"
+                        class="active"
+                    >
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTACT HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                GET IN TOUCH
+            </p>
+
+            <h1>
+                Let's Find Your
+                <span>Next Car</span>
+            </h1>
+
+            <p>
+                Have a question about one of our
+                vehicles? Send us a message.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section class="services">
+
+        <div class="section-heading">
+
+            <p>
+                CONTACT US
+            </p>
+
+            <h2>
+                We'd Love To Hear From You
+            </h2>
+
+        </div>
+
+
+        <div class="contact-container">
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info">
+
+                <h2>
+                    Contact Information
+                </h2>
+
+                <p>
+                    Get in touch with our team
+                    for vehicle enquiries,
+                    appointments and general questions.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        📞
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Phone
+                        </h3>
+
+                        <p>
+                            +266 62675186
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        📧
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p>
+                            info@drivesmart.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        📍
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Location
+                        </h3>
+
+                        <p>
+                            Maseru / Lesotho
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        🕐
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Opening Hours
+                        </h3>
+
+                        <p>
+                            Monday - Saturday
+                        </p>
+
+                        <p>
+                            08:00 - 17:00
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="contact-form">
+
+                <form
+                    action="#"
+                    method="post"
+                >
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="car">
+                            Vehicle Interested In
+                        </label>
+
+                        <select
+                            id="car"
+                            name="car"
+                        >
+
+                            <option value="">
+                                Select a vehicle
+                            </option>
+
+                            <option>
+                                Volkswagen Polo
+                            </option>
+
+                            <option>
+                                Toyota Corolla
+                            </option>
+
+                            <option>
+                                BMW 3 Series
+                            </option>
+
+                            <option>
+                                Volkswagen Golf
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Send Enquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h2>
+                    DriveSmart
+                </h2>
+
+                <p>
+                    Your trusted pre-owned
+                    car dealership.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="cars.html">
+                    Cars
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    +266 62675186
+                </p>
+
+                <p>
+                    📧 info@drivesmart.com
+                </p>
+
+                <p>
+                    📍 Maseru / Lesotho
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 DriveSmart Pre-Owned Cars.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

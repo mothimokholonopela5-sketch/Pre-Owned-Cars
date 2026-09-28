@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Our Cars | DriveSmart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <span>DS</span>
+
+                DriveSmart
+
+            </div>
+
+
+            <button
+                class="menu-btn"
+                onclick="toggleMenu()"
+            >
+                ☰
+            </button>
+
+
+            <ul id="navLinks">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="cars.html"
+                        class="active"
+                    >
+                        Cars
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                OUR INVENTORY
+            </p>
+
+            <h1>
+                Explore Our
+                <span>Cars</span>
+            </h1>
+
+            <p>
+                Find a reliable pre-owned vehicle
+                that matches your lifestyle and budget.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="search-section">
+
+        <h2>
+            Search Our Inventory
+        </h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by brand or model..."
+                onkeyup="searchCars()"
+            >
+
+
+            <select
+                id="priceFilter"
+                onchange="filterCars()"
+            >
+
+                <option value="all">
+                    All Prices
+                </option>
+
+                <option value="100000">
+                    Under R100,000
+                </option>
+
+                <option value="200000">
+                    Under R200,000
+                </option>
+
+                <option value="300000">
+                    Under R300,000
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- INVENTORY -->
+
+    <section class="cars-section">
+
+        <div class="section-heading">
+
+            <p>
+                AVAILABLE NOW
+            </p>
+
+            <h2>
+                Browse Our Vehicles
+            </h2>
+
+        </div>
+
+
+        <div
+            class="cars-grid"
+            id="carContainer"
+        >
+
+
+            <!-- POLO -->
+
+            <div
+                class="car-card"
+                data-name="Volkswagen Polo"
+                data-price="185000"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="images/IMG_50011-large.jpg"
+                        alt="Volkswagen Polo"
+                    >
+
+                    <span class="badge">
+                        Available
+                    </span>
+
+                </div>
+
+
+                <div class="car-info">
+
+                    <h3>
+                        Volkswagen Polo
+                    </h3>
+
+                    <p class="details">
+                        2021 • Manual • Petrol
+                    </p>
+
+                    <h4>
+                        R185,000
+                    </h4>
+
+                    <a
+                        href="contact.html"
+                        class="view-btn"
+                    >
+                        Enquire Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOYOTA -->
+
+            <div
+                class="car-card"
+                data-name="Toyota Corolla"
+                data-price="215000"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="images/adde77db-686b-4efd-a8e8-ca828897d633.png"
+                        alt="Toyota Corolla"
+                    >
+
+                    <span class="badge">
+                        Available
+                    </span>
+
+                </div>
+
+
+                <div class="car-info">
+
+                    <h3>
+                        Toyota Corolla
+                    </h3>
+
+                    <p class="details">
+                        2020 • Automatic • Petrol
+                    </p>
+
+                    <h4>
+                        R215,000
+                    </h4>
+
+                    <a
+                        href="contact.html"
+                        class="view-btn"
+                    >
+                        Enquire Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- BMW -->
+
+            <div
+                class="car-card"
+                data-name="BMW 3 Series"
+                data-price="295000"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="images/BMW-3-Series-2019-wallpaper.jpg"
+                        alt="BMW 3 Series"
+                    >
+
+                    <span class="badge">
+                        Available
+                    </span>
+
+                </div>
+
+
+                <div class="car-info">
+
+                    <h3>
+                        BMW 3 Series
+                    </h3>
+
+                    <p class="details">
+                        2019 • Automatic • Petrol
+                    </p>
+
+                    <h4>
+                        R295,000
+                    </h4>
+
+                    <a
+                        href="contact.html"
+                        class="view-btn"
+                    >
+                        Enquire Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- GOLF -->
+
+            <div
+                class="car-card"
+                data-name="Volkswagen Golf"
+                data-price="245000"
+            >
+
+                <div class="car-image">
+
+                    <img
+                        src="images/d43864c90df075c94489ddbe4ca5ffe934e5ee8de4fe39de48065da3918e2354.jpg"
+                        alt="Volkswagen Golf"
+                    >
+
+                    <span class="badge">
+                        Available
+                    </span>
+
+                </div>
+
+
+                <div class="car-info">
+
+                    <h3>
+                        Volkswagen Golf
+                    </h3>
+
+                    <p class="details">
+                        2022 • Manual • Petrol
+                    </p>
+
+                    <h4>
+                        R245,000
+                    </h4>
+
+                    <a
+                        href="contact.html"
+                        class="view-btn"
+                    >
+                        Enquire Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VIDEO SHOWCASE -->
+
+    <section class="video-section">
+
+        <div class="section-heading light">
+
+            <p>
+                VIDEO SHOWCASE
+            </p>
+
+            <h2>
+                See Our Cars
+            </h2>
+
+            <p>
+                Replace these videos with your own downloaded
+                car videos.
+            </p>
+
+        </div>
+
+
+        <div class="video-grid">
+
+
+            <div class="video-card">
+
+                <video
+                    controls
+                    poster="images/car1.jpg"
+                >
+
+                    <source
+                        src="videos/e011f86ed551f3660412d3f3cf73846d.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+                <h3>
+                    Car Walkaround
+                </h3>
+
+            </div>
+
+
+            <div class="video-card">
+
+                <video
+                    controls
+                    poster="images/car2.jpg"
+                >
+
+                    <source
+                        src="videos/97bacfa236ce82e43a0be8ffd8ec93fb.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+                <h3>
+                    Vehicle Overview
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    DriveSmart
+                </h2>
+
+                <p>
+                    Quality pre-owned vehicles
+                    at affordable prices.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="cars.html">
+                    Cars
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📞 +266 62675186
+                </p>
+
+                <p>
+                    📧 info@drivesmart.com
+                </p>
+
+                <p>
+                    📍 Maseru / Lesotho
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 DriveSmart Pre-Owned Cars.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
